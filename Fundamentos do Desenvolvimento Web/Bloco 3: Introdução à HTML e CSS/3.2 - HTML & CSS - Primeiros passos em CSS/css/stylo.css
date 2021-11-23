@@ -1,0 +1,45 @@
+body {
+  background-image: url(../img/fundo-sites.jpg);
+  background-repeat:repeat-x
+  background-size: contain; 
+}
+ div {
+   text-align: center;
+}
+ h2 {
+  color: orangered;
+ }
+ h1 {
+  font-size: 50px;
+  color: orange;
+  font-family: Arial, Helvetica ,sans-serif;
+  font-style: italic;
+ }
+ li{
+  color: black;
+  font-weight: bold;
+  line-height: 30px;
+  font-style: italic;
+  text-align: center;
+ }
+ .colors3{
+  text-decoration: none;
+ }
+ .colors{
+  color: black;
+  text-align: center;
+  font-weight: 600;
+ }
+ .colors2{
+  color: black;
+  font-weight: bolder;
+ }
+ .number1{
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica ,sans-serif ;
+    font-weight: bolder;
+ }
+ .number2{
+    color: black;
+ }
