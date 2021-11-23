@@ -16,7 +16,8 @@ body {
   font-style: italic;
  }
  li{
-  color: black;
+  text-shadow: 0px 0px 8px white;
+  color: white;
   font-weight: bold;
   line-height: 30px;
   font-style: italic;
@@ -39,7 +40,4 @@ body {
     font-size: 18px;
     font-family: Arial, Helvetica ,sans-serif ;
     font-weight: bolder;
- }
- .number2{
-    color: black;
  }
