@@ -1,0 +1,19 @@
+#primaria:hover {
+background-color: red;
+font-style: italic;
+}
+#secudaria:hover {
+background-color: green;
+}
+#Complementar:hover {
+background-color: #00FFFF;
+font-size: 30px;
+font-style: italic;
+}
+#Escura:hover {
+background-color: maroon;
+}
+#Clara:hover {
+background-color: yellow;
+font-style: italic;
+}
