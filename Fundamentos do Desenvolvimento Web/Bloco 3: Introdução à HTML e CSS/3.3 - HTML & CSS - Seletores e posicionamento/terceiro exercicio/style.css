@@ -1,0 +1,33 @@
+h1, p, ol, ul{
+  text-align: center;
+  list-style:none;
+
+}
+.backcollor1:hover {
+background-color: grey;
+margin-left: 550px;
+margin-right: 550px;
+border-radius: 15%;
+}
+.backcollor2:hover {
+background-color: gray;
+margin-left: 550px;
+margin-right: 550px;
+border-radius: 15%;
+}
+.backcollor3:hover {
+background-color: gray;
+margin-left: 550px;
+margin-right: 550px;
+border-radius: 15%;
+
+}
+.backcollor1:active {
+  color:yellow;
+}
+.backcollor2:active {
+  color:yellow;
+}
+.backcollor3:active {
+  color:yellow;
+}
