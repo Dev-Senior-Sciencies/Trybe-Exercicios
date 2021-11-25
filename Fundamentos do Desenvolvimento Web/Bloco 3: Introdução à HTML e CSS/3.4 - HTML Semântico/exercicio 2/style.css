@@ -1,0 +1,35 @@
+h5 {
+  text-align: center;
+  font-style: normal;
+  color: blueviolet;
+  font-family: monospace, Arial, sans-serif;
+  font-size: 30px;
+
+}
+h6 {
+  text-align: center;
+  color: black;
+  font-style: italic;
+  font-size: 19px;
+  font-family: cursive, monospace, sans-serif, Arial;
+}
+h1 {
+  background-color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.Bordcolor {
+  background-color: pink;
+  text-align: center;
+  margin-right: 330px;
+  margin-left: 330px;
+  font-size: 30px;
+}
+#colordivs{
+  background-color: grey;
+}
