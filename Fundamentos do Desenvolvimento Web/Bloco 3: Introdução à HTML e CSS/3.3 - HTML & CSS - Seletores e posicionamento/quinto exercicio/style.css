@@ -1,0 +1,52 @@
+ ol {
+ background-color: yellow;
+
+}
+ .numeroPar {
+ color: green;
+
+}
+ .numeroimPar {
+   text-transform: uppercase;
+  
+ }
+ h1, h2, h3 {
+   color: red;
+
+ }
+ .italico {
+   font-size: 40px;
+   border: solid 1px black;
+ }
+ li {
+   font-size: 20px;
+
+ }
+ li em {
+   font-weight: bolder;
+ }
+ .rosa {
+   background-color: pink;
+ }
+ .azul {
+   background-color: blue;
+ }
+ .laranja:hover {
+  font-weight: bolder;
+  color: orange; 
+ }
+ .verde:hover {
+  font-weight: bolder;
+  color: green;
+ }
+ .preto:hover {
+  font-weight: bolder;
+  color: black;
+ }
+ .amarela:hover {
+  font-weight: bolder;
+  color: yellow;
+ }
+
+
+
