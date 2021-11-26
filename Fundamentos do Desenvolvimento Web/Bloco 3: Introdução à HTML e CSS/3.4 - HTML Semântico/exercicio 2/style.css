@@ -1,35 +1,53 @@
-h5 {
-  text-align: center;
-  font-style: normal;
-  color: blueviolet;
-  font-family: monospace, Arial, sans-serif;
-  font-size: 30px;
+body {
+height: 300vh;
 
 }
-h6 {
+#tituloprincipal {
+  font-family: cursive, sans-serif, serif;
+  color: LightPink;
+  font-style: italic;
   text-align: center;
-  color: black;
-  font-style: italic;
-  font-size: 19px;
-  font-family: cursive, monospace, sans-serif, Arial;
+
 }
-h1 {
-  background-color: grey;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
+#titulodepub {
+  font-family: monospace, sans-serif, serif;
   color: black;
   text-align: center;
-  font-size: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
+  font-weight: 100;
+  font-size: 15px;
+  left: 50px;
+  position: relative;
+
 }
-.Bordcolor {
-  background-color: pink;
+#titulodeciencia {
+  background-color: DimGray;
+  width: 700px;
+  height: 40px;
+  color: black;
+  font-family: cursive, sans-serif, serif;
+  font-style: italic;
+  font-size: 17px;
   text-align: center;
-  margin-right: 330px;
-  margin-left: 330px;
-  font-size: 30px;
+  margin-left: 188px;
+  padding-left: 150px;
+  padding-right: 165px;
+
 }
-#colordivs{
-  background-color: grey;
+#nolinha {
+  background-color: black;
+  font-family: monospace, sans-serif, serif;
+  width: 613px;
+  height: 38px;
+  font-size: 17px;
+  text-align: center;
+  margin-left: 386px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 14px;
+  padding-top: 12px;
+
+}
+#nolinha:hover {
+  background-color: rgb(0, 243, 101);
+
 }
