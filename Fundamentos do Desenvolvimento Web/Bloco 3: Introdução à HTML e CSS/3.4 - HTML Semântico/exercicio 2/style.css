@@ -85,3 +85,39 @@ border-radius: 25px;
   position: relative;
   left: 343px;
 }
+.fatos-cmr2{
+  background-image: url(600px-Palaemon_serratus_Croazia.jpg);
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 500px;
+  position: relative;
+  text-align: center;
+}
+
+.paragrafos-menu2{
+  font-size: 15px;
+  color: white;
+  text-transform:initial ;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  max-width: 500px;
+  position: relative;
+  left: 343px;
+  font-style: italic;
+  padding: 10px;
+}
+#Coloblack{
+  color: black;
+}
+
+.fatos-texto2{
+  margin-left: 20px;
+  color:black;
+  top: -44px;
+  position: relative;
+}
+li{
+  list-style: none;
+}
