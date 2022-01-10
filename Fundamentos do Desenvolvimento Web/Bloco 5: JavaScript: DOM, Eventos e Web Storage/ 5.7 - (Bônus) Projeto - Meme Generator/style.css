@@ -1,0 +1,85 @@
+body {
+  background-image: url(/imgs/fund.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align:center;
+}
+#titulo{
+  font-family: monospace,'Arial Narrow Bold', sans-serif;
+  font-size: 60px;
+  color: #F19CBD;
+  text-shadow: 5px 5px 3px black;
+  margin-top: 15px;
+}
+ /* requisito 3 */
+#meme-image-container {
+  background-color: white;
+  width: 602px ;
+  height: 502px ;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  margin: 10px;
+}
+#text-input, #meme-insert{
+  margin-bottom: 8px;
+}
+ /* requisito 2 */
+#meme-image {
+  border: 1px solid black;
+  width: 600px;
+  height: 500px;
+}
+.meme {
+  width: 600px;
+  height: 500px;
+}
+#meme-text {
+  position: absolute;
+  text-align: justify;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+  font-family: monospace, 'Arial Narrow Bold', sans-serif;
+  border: solid 3px black;
+  display: inline;
+  left: 0px;
+}
+/* requisito 3 */
+
+.inicialBorder {
+  border: 1px solid black;
+}
+
+/* requisito 6 */
+#fire {
+  background-color: red;
+}
+#water {
+  background-color: blue;
+}
+#earth {
+  background-color: green;
+}
+.fire {
+  border: 3px dashed red;
+}
+.water {
+  border: 5px double blue;
+}
+.earth {
+  border: 6px groove green;
+}
+/* requisito 7 */
+#miniaturas img {
+  height: 75px;
+  width: 75px;
+  border: double;
+}
+#memes-prontos{
+  font-family: monospace, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  color: #F19CBD;
+  text-shadow: 3px 3px 3px black;
+}

@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+}
+#title{
+  border: red solid 3px;
+  position: relative;
+  left: 40%;
+  max-height:100px;
+  max-width: 300px;
+  text-align: center;
+  color: dimgrey;
+}
+body{
+  background-color: gainsboro;
+}
+
+#color-palette {
+  display: inline-flex;
+  position: relative;
+  margin: 5% 38%;
+  background-color: rgb(rgba(0, 187, 239, 0.592));
+  left: 0%;
+}
+.color {
+  border: black solid 1px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+
+#black{
+  background-color:black;
+
+}
+#color1{
+  background-color:blue;
+
+}
+#color2{
+  background-color: rgb(209, 209, 198);
+
+}
+#color3{
+  background-color: red;
+
+}
+#color4{
+  background-color: dimgray;
+}
+
+.pixel{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: solid 1px black;
+  background-color: white;
+}
+#pixel-board{
+  position: absolute;
+  left: 43%;
+  display: inline-block;
+}
+
+.colorindoText{
+  color: black;
+  text-align: justify;
+}
+.colorindoText:hover{
+  color: red;
+}
