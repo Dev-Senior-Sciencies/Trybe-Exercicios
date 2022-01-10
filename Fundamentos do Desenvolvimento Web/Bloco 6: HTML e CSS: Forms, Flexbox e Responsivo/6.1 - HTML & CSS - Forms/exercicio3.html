@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="get">
+        <header>
+            <h1>FORMULARY</h1>
+        </header>
+        <br>
+      <fieldset id="filtwo" name="filtwo">Dados Pessoais <br><br><br><br>
+
+        <label for="input-nome">Nome :</label>
+        <input type="text" maxlength="40" required id="input-nome">
+        <br><br>
+
+        <label for="input-email">Email :</label>
+        <input type="email" maxlength="50" required id="input-email">
+        <br><br>
+
+        <label for="input-cidade">Cidade:</label>
+        <input type="text" maxlength="28" required id="input-cidade">
+        <br><br>
+
+        <label for="input-endereco">Endereço:</label>
+        <input type="text" maxlength="200" required id="input-endereco">
+        <br><br>
+
+        <label for="input-cpf">CPF :</label>
+        <input type="text" maxlength="14" required id="input-cpf"placeholder="Example: 233.222.222-51">
+        <br><br>
+        <select name="Estados" id="estado">
+
+        </select>
+        <br><br>
+        <select name="moradia" id="moradia">Residencia
+            <option id="casa" valor="moradia" name="casa" value="Casa">Casa</option>
+            <option id="ap"  valor="moradia" name="ap" value="Apartamento">Apartamento</option>
+        </select>
+    </fieldset>
+    <fieldset id="filtwo" name="filtwo">Dados Do Seu Último Emprego
+        <br><br><br>
+
+        <label for="resumiToCuricle">Resumo do Currículo:</label><br>
+        <textarea name="resumiToCuricle" id="resumiToCuricle" cols="60" rows="10" maxlength="1000" required></textarea>
+        <br><br>
+        <label for="input-cargo">Cargo :</label>
+        <input type="text" name="input-cargo" id="input-cargo" required maxlength="40">
+        <br><br>
+        <label for="input-descrição-cargo">Descrição do cargo :</label>
+        <input type="text" name="input-descrição-cargo" id="input-descrição-cargo" required maxlength="500">
+        <br><br>
+        <label for="input-data">Data de início :</label>
+        <input type="date" name="input-data" id="input-data" required>
+    </fieldset>
+    <button type="submit" id="enviar" name="enviar">Enviar</button>
+    <button type="reset" id="limpar" name="limpar">Limpar</button>
+    </form>
+    <div>
+        <p id="dados-inseridos"></p>
+    </div>
+    <script src="script3.js"></script>
+</body>
+</html>
