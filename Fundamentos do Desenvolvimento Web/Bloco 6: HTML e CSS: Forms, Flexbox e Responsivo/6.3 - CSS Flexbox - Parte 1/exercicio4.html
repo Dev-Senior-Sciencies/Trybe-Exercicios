@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox - Flex Flow</title>
+    <title>Flexbox - Align Content</title>
     <style>
       .box {
         color: #9069EF;
         background-color: rgb(243, 243, 243);
         border: 2px solid #232525;
         font-size: 50px;
-        height: 60px;
+        min-height: 60px;
         margin: 10px 5px;
         text-align: center;
         width: 30%;
@@ -19,13 +19,14 @@
       .box-container {
         background-color: #0fa36b;
         display: flex;
-        flex-direction: row;
-        /* flex-direction: row-reverse; */
-        /* flex-direction: column; */
-        /* flex-direction: column-reverse; */
-        /* flex-wrap: wrap-reverse; */
-        /* flex-wrap: wrap; */
-        /* flex-flow: row wrap; */
+        flex-wrap: wrap;
+        height: 600px;
+        align-content: center;
+        /* align-content: flex-end; */
+        /* align-content: flex-start; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        /* align-content: stretch; */
         /* ADICIONE AQUI SEUS TESTES */
       }
     </style>
@@ -38,6 +39,10 @@
       <div class="box">3</div>
       <div class="box">4</div>
       <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
     </div>
   </body>
 </html>
