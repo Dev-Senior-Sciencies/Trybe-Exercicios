@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="get">
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+          
+        <header>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+
+            <h1 class="h1 display-4">Formulario</h1>
+
+         </div>
+
+        </header>
+
+        <br>
+
+      <fieldset id="filtwo" name="filtwo"> 
+
+          <h2 class="display-6 text-muted">Dados Pessoais</h2>
+          
+        
+    <br><br><br>
+
+     <div class="row">
+
+        <div class="col">
+
+            <label for="input-nome" class="form-label font-monospace fw-bolder fs-4">Nome :</label>
+
+            <input type="text" maxlength="40" required id="input-nome" class="form-control row">
+
+        </div>
+
+        <div class="col">
+
+            <label for="input-email" class="form-label font-monospace fw-bolder fs-4">Email :</label>
+
+            <input type="email" maxlength="50" required id="input-email" class="form-control">
+
+        </div>
+
+     </div><br><br>
+            
+    <div class="row">
+
+        <div class="col">
+
+            <label for="input-cidade" class="form-label font-monospace fw-bolder fs-4">Cidade:</label>
+
+            <input type="text" maxlength="28" required id="input-cidade" class="form-control">
+
+        </div>
+
+        <div class="col">
+
+            <label for="input-endereco" class="form-label font-monospace fw-bolder fs-4">Endereço:</label>
+
+            <input type="text" maxlength="200" required id="input-endereco" class="form-control">
+
+        </div>
+
+     </div><br><br>
+        
+
+     <div class="row">
+
+        <div class="col">
+
+            <label for="input-cpf" class="form-label font-monospace fw-bolder fs-4">CPF :</label>
+
+            <input type="text" maxlength="14" required id="input-cpf"placeholder="Example: 233.222.222-51" class="form-control">
+
+        </div>
+
+        <div class="col">
+
+        <!--   <div class="form-floating">  -->
+             <label for="estado" class="font-monospace fw-bolder fs-4">Estado :</label>
+             <select class="form-select font-monospace fw-bolder fs-4" name="Estados" id="estado">
+
+             </select>
+
+         <!--  </div> -->
+
+        </div>
+
+     </div><br><br>
+
+    <div class="form-floating"> 
+
+        <select class="form-select font-monospace fw-bolder fs-6" name="moradia" id="moradia">Residencia
+
+            <option id="casa" valor="moradia" name="casa" value="Casa">Casa</option>
+
+            <option id="ap"  valor="moradia" name="ap" value="Apartamento">Apartamento</option>
+
+        </select>
+
+    </div>
+
+    </fieldset><br><br>
+
+    <fieldset id="filtwo" name="filtwo">
+
+        <h2 class="display-6 text-muted">Dados Do Seu Último Emprego</h2>
+
+        
+        <br><br><br>
+        <label for="resumiToCuricle" class="form-label font-monospace fw-bolder fs-4">Resumo do Currículo:</label><br>
+
+        <textarea name="resumiToCuricle" id="resumiToCuricle" cols="60" rows="10" maxlength="1000" required class="form-control is-invalid form-control">
+
+        </textarea>
+
+    <br><br>
+    <div class="row">
+
+        <div class="col">       
+
+            <label for="input-cargo" class="form-label font-monospace fw-bolder fs-4">Cargo que Ocupa:</label>
+
+            <input type="text" name="input-cargo" id="input-cargo" required maxlength="40" class="form-control">
+
+         </div>
+
+        <div class="col">    
+
+            <label for="input-descrição-cargo" class="form-label font-monospace fw-bolder fs-4">Descrição do cargo:</label>
+
+            <input type="text" name="input-descrição-cargo" id="input-descrição-cargo" required maxlength="500" class="form-control">
+
+         </div>
+
+        <div class="col"> 
+
+            <label for="input-data"class="form-label font-monospace fw-bolder fs-4">Data de início:</label>
+
+            <input type="date" name="input-data" id="input-data" required class="form-control">
+
+         </div>
+    </div>
+
+    </fieldset>
+
+    <section>
+        <br>
+     <div class="d-grid gap-2">
+        <button type="submit" id="enviar" name="enviar" class="btn btn-outline-success">Enviar</button>
+
+        <button type="reset" id="limpar" name="limpar" class="btn btn-danger">Limpar</button>
+      </div>
+    </section>
+
+    </form>
+
+    <div class="container-sm">
+
+        <p class="alert alert-warning" id="dados-inseridos"></p>
+
+    </div>
+
+</div>
+    <script src="dist/js/DatePickerX.min.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
