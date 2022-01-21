@@ -1,95 +1,279 @@
-body {
-  background-color:rgb(253, 251, 251);
-  height: 50vh;
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
-.lado-esquerdo{
-  font-size: 15px;
-  text-decoration: none;
-  color: black;
-  padding: 10px 15px;
-  border-radius: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-  max-width: 500px;
-  position: relative;
-}
-.lado-direito{
-  font-size: 30px;
-  text-decoration: none;
-  color: black;
-  text-transform: initial ;
-  padding: 10px 15px;
-  border-radius: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: right;
-  max-width: 500px;
-  bottom: 290px;
-  left: 525px;
-  position: relative;
-  line-height: 1.5;
-}
-#cabecalho{
-  position: fixed;
-  top: 0;
-  left: 500px;
-}
-#minha_foto{
-  color: black;
-  display: flex;
-}
-#lista_lições{
-  color: black;
-}
-#licoes_aprendidas{
-  color: black;
-}
-#rodape{
-  width: 1250px;
-  background: black;
-  display: flex;
-  min-height: 200px;
-  position: absolute;
-}
-footer .boxs{
-  width: 320px;
-  min-height: 150px;
-  padding: 20px;
-}
-footer .boxs:nth-child(4) {
-  width: 400px;
-}
-.boxs h2 {
-  color: white;
-  margin-bottom: 20px;
+* {
+  box-sizing: border-box;
 
 }
-.boxs ul li {
-  margin: 10px 0px;
+
+#contenerBody {
+  flex-direction: column;
+  display: flex;
+  background-color: #1E1A34;
+  
+}
+
+#contenerHeader {
+  display: flex;
+  color: rgb(240, 239, 235);
+  width: 100%;
+  background-image: url(./prgra3.jpg);
+  background-repeat: no-repeat;
+  height: 310px;
+  border-radius: 15px;
+
+}
+
+#cabecalho {
+  position: relative;
+  left: 29%;
+  bottom: 30px;
+  
+}
+
+#titulo {
+ font-family: Courier, monospace;
+ font-size: 48px;
+ text-shadow: #B7B7B7 5px 5px 5px;
+
+
+}
+
+#contenerTable {
+  display: flex;
+  align-self: center;
+  border-radius: 15px;
+  width: 100%;
+  height: 310px;
+  margin-top: 100px;
+  background-color: #464061;
+  
+}
+
+table {
+  display: flex;
+  text-align: center;
+  position: relative;
+  left: 29%;
+  font-size: 40px;
+  border: solid 10px black;
+  color: white;
+  height: 180px;
+  top: 25%;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px white;
+
+}
+
+#contenerImg {
+  display: flex;
+  align-self:center;
+  margin-top: 3px;
+  position: relative;
+  right: 650px;
+  border: solid 10px black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px white;
+  
+}
+
+#contenerMain {
+  flex-direction: column;
+  display: flex;
+  align-self: center;
+  margin-top: 3px;
+  background-image: url(./desenho.jpg);
+  background-repeat:round;
+  border-radius: 15px;
+
+}
+
+#contenerH2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-weight: bolder;
+  font-style: italic;
+  text-shadow: black 3px 3px 3px;
+
+}
+
+#contenerLi {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+  text-shadow: black 3px 3px 3px;
+  font-size: 20px;
+  color: aqua;
+
+}
+
+#licoes_aprendidas {
   list-style: none;
 
 }
-.boxs ul li a {
-  text-decoration: none;
-  color: white;
-}
-.boxs ul li a:hover{
-  color: cadetblue;
+
+#licoes_a_aprender {
+  list-style: none;
 
 }
-.boxs p {
-  color: white;
+
+.lado-esquerdo {
+  display: flex;
   text-align: justify;
+  height: 300px;
+  width: 50%;
+  border-radius: 15px;
+  padding: 10px;
+  border: 10px solid black;
+  box-shadow: black 10px 10px 10px;
+  text-shadow: black 10px 10px 10px;
+  font-weight: bold;
+
 }
-#sobremin:hover{
-  color:  red;
+
+.lado-direito {
+  display: flex;
+  text-align: justify;
+  border: 10px solid black;
+  box-shadow: black 10px 10px 10px;
+  height: 300px;
+  width: 50%;
+  border-radius: 15px;
+  padding: 50px;
+  text-shadow: black 10px 10px 10px;
+  font-weight: bold;
+
 }
-#contato:hover{
-  color: red;
+
+#contenerSection {
+ display: flex;
+ color: white;
+
 }
-#collored:hover{
-color:red;
+
+.lado-esquerdo:hover {
+  background-color: rgb(72, 53, 53);
+
 }
-#main{
+
+.lado-direito:hover {
+  background-color: red;
+
+}
+
+
+#contenerFooter {
+  display: flex;
+  align-self: center;
+  width: 100%;
+  background-color: #1E1A34;
+  color: rgb(233, 226, 226);
+  border-radius: 15px;
+
+}
+
+#rodape {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+.boxs {
+  display: flex;
+  text-align: justify;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  
+}
+
+#ulRede {
   display: inline-block;
+  flex-direction: column;
+  list-style: none;
+  position: inherit;
+  text-align: center;
+  height: 80px;
+  width: 100px;
+  padding: 10px;
+  text-shadow: black 10px 10px 10px;
+  font-weight: bold;
+  font-style: italic;
+
 }
-/*  foi resolvido tudo */
+
+h2#collored {
+  font-size: 25px;
+  display: inline;
+  width: 200px;
+  
+}
+
+h2#contato {
+  font-size: 25px;
+  display: inline;
+  width: 101px;
+  margin-left: 10px;
+
+}
+
+#ulSuport {
+  display: inline-block;
+  flex-direction: column;
+  list-style: none;
+  position: inherit;
+  text-align: center;
+  height: 80px;
+  width: auto;
+  padding: 10px;
+
+}
+
+h2#sobremin {
+  font-size: 25px;
+  display: inline;
+  width: 200px;
+  margin-left: 10px;
+
+}
+
+p#pSobre-Min {
+  display: inline-block;
+  flex-direction: column;
+  list-style: none;
+  position: inherit;
+  text-align: center;
+  height: 80px;
+  width: auto;
+  padding: 10px;
+  text-shadow: black 10px 10px 10px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  
+}
+
+ a {
+  text-decoration: none;
+  font-style: italic;
+  text-shadow: black 10px 10px 10px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+a:hover {
+  background-color: rgba(238, 236, 236, 0.111);
+  border-radius: 15px;
+
+}
