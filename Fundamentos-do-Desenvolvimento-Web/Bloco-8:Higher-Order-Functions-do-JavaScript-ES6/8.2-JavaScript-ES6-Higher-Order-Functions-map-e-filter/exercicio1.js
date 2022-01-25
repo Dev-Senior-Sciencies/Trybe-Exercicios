@@ -67,6 +67,7 @@ const books = [
 function authorBornIn1947() {
   return books.find((book) => book.author.birthYear === 1947).author.name;
 }
+console.log(authorBornIn1947());
 
 function smallerName() {
   let nameBook;
@@ -80,30 +81,37 @@ function smallerName() {
   // Variável nameBook que receberá o valor do menor nome;
   return nameBook;
 }
+console.log(smallerName());
 
 function getNamedBook() {
   return books.find((book) => book.name.length === 26);
 }
+console.log(getNamedBook());
 
 function booksOrderedByReleaseYearDesc() {
   return books.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear);
 }
 
-const expectedResult = false;
+console.log(booksOrderedByReleaseYearDesc());
+
+const expectedResult1 = false;
 
 function everyoneWasBornOnSecXX() {
   return books.every((book) => (
     book.author.birthYear > 1900 && book.author.birthYear <= 2000
   ));
 }
+console.log(everyoneWasBornOnSecXX());
 
-const expectedResult = true;
+const expectedResult2 = true;
 
 function someBookWasReleaseOnThe80s() {
   return books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989);
 }
 
-const expectedResult = false;
+console.log(someBookWasReleaseOnThe80s());
+
+const expectedResult3 = false;
 
 function authorUnique() {
   return books.every((book) =>
@@ -111,3 +119,5 @@ function authorUnique() {
       (bookSome.author.birthYear === book.author.birthYear)
       && (bookSome.author.name !== book.author.name)));
 }
+
+console.log(authorUnique());
