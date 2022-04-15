@@ -1,0 +1,82 @@
+.contener-form {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dad7cd;
+  border-radius: 10px;
+}
+
+.contener-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 452px;
+  width: 413px;
+  border-radius: 10px;
+  background: #011627;
+}
+
+.sing-in {
+  display: flex;
+  width: 105px;
+  height: 37px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 38px;
+  color: #fdfffc;
+  top: 108px;
+  position: absolute;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: flex-start;
+  width: 74px;
+  height: 35px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fdfffc;
+  margin-right: 50%;
+}
+
+.input-login {
+  border: solid 1px #fdfffc;
+  outline: none;
+  margin-left: 50%;
+  display: flex;
+  width: 160px;
+  height: 31px;
+  background: #fdfffc;
+  border-radius: 10px;
+  color: #2ec4b6;
+}
+
+.btn-login {
+  position: relative;
+  top: 138px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+  height: 31px;
+  background: #fdfffc;
+  border-radius: 10px;
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #2ec4b6;
+}
