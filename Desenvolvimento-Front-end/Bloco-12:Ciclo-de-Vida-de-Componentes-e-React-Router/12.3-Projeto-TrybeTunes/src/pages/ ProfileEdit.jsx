@@ -92,56 +92,76 @@ class ProfileEdit extends Component {
     return (
       <div data-testid="page-profile-edit">
         <Header />
-        <form>
-          <label htmlFor="edit-input-name">
-            Nome:
-            <input
-              name="userName"
-              data-testid="edit-input-name"
-              type="text"
-              value={ userName }
-              onChange={ onInputChanger }
-            />
-          </label>
-          <label htmlFor="edit-input-email">
-            E-mail:
-            <input
-              name="userEmail"
-              data-testid="edit-input-email"
-              type="email"
-              value={ userEmail }
-              onChange={ onInputChanger }
-            />
-          </label>
-          <label htmlFor="edit-input-description">
-            Descrição:
-            <input
-              name="userDescription"
-              data-testid="edit-input-description"
-              type="text"
-              value={ userDescription }
-              onChange={ onInputChanger }
-            />
-          </label>
-          <label htmlFor="edit-input-image">
-            Foto:
-            <input
-              name="userImage"
-              data-testid="edit-input-image"
-              type="text"
-              value={ userImage }
-              onChange={ onInputChanger }
-            />
-          </label>
-          <button
-            name="isDisableButton"
-            onClick={ onSaveButtonClick }
-            disabled={ isDisableButton }
-            data-testid="edit-button-save"
-            type="submit"
-          >
-            Salvar alteração
-          </button>
+        <form className="containe-form">
+          <div className="containe-input-form">
+
+            <label
+              className="label-edit-profile"
+              htmlFor="edit-input-name"
+            >
+              Nome:
+              <input
+                className="userName-edit-prof"
+                name="userName"
+                data-testid="edit-input-name"
+                type="text"
+                value={ userName }
+                onChange={ onInputChanger }
+              />
+            </label>
+            <label
+              className="label-edit-profile"
+              htmlFor="edit-input-email"
+            >
+              Email:
+              <input
+                className="userEmail-edit-prof"
+                name="userEmail"
+                data-testid="edit-input-email"
+                type="email"
+                value={ userEmail }
+                onChange={ onInputChanger }
+              />
+            </label>
+            <label
+              className="label-edit-profile"
+              htmlFor="edit-input-description"
+            >
+              Descrição:
+              <input
+                className="userDescription-edit-prof"
+                name="userDescription"
+                data-testid="edit-input-description"
+                type="text"
+                value={ userDescription }
+                onChange={ onInputChanger }
+              />
+            </label>
+            <label
+              className="label-edit-profile"
+              htmlFor="edit-input-image"
+            >
+              Foto:
+              <input
+                className="userImage-edit-prof"
+                name="userImage"
+                data-testid="edit-input-image"
+                type="text"
+                value={ userImage }
+                onChange={ onInputChanger }
+              />
+            </label>
+            <button
+              className="button-edit-prof"
+              name="isDisableButton"
+              onClick={ onSaveButtonClick }
+              disabled={ isDisableButton }
+              data-testid="edit-button-save"
+              type="submit"
+            >
+              Salvar alteração
+            </button>
+          </div>
         </form>
         <div>
           {isLoading && <Carregando loading={ isLoading } />}

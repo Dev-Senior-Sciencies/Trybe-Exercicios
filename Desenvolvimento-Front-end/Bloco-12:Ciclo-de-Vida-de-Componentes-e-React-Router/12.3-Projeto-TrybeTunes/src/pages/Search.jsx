@@ -56,62 +56,72 @@ class Search extends React.Component {
 
          <div data-testid="page-search">
            <Header />
+           <div className="container-form-search">
+             <div className="container-div-search">
+               {
+                 loading
+                   ? (
+                     <Loading />
+                   ) : (
+                     <form className="search-submit">
+                       <input
+                         className="input-search"
+                         type="text"
+                         name="nameSearchText"
+                         data-testid="search-artist-input"
+                         onChange={ this.handleChange }
+                         value={ nameSearchText }
+                       />
 
-           {
-             loading
-               ? (
-                 <Loading />
-               ) : (
-                 <form>
-                   <input
-                     type="text"
-                     name="nameSearchText"
-                     data-testid="search-artist-input"
-                     onChange={ this.handleChange }
-                     value={ nameSearchText }
-                   />
+                       <button
+                         className="button-submit"
+                         type="submit"
+                         data-testid="search-artist-button"
+                         disabled={ this.isDisableButtom() }
+                         onClick={ this.search }
+                       >
+                         Pesquisar
 
-                   <button
-                     type="submit"
-                     data-testid="search-artist-button"
-                     disabled={ this.isDisableButtom() }
-                     onClick={ this.search }
-                   >
-                     Pesquisar
+                       </button>
+                     </form>
+                   )
+               }
 
-                   </button>
-                 </form>
-               )
-           }
+               {
+                 albums && (
+                   albums.length > 0
+                     ? (
+                       <>
+                         <h2
+                           className="h2-result"
+                         >
+                           {`Resultado de álbuns de: ${searchPrevious}` }
 
-           {
-             albums && (
-               albums.length > 0
-                 ? (
-                   <>
-                     <h2>{`Resultado de álbuns de: ${searchPrevious}` }</h2>
-                     <ul>
-                       {
-                         albums.map(({ collectionId, collectionName }) => (
-                           <li key={ collectionId }>
-                             <Link
-                               data-testid={ `link-to-album-${collectionId}` }
-                               to={ `/album/${collectionId}` }
+                         </h2>
+                         <ul>
+                           {
+                             albums.map(({ collectionId, collectionName }) => (
+                               <li key={ collectionId }>
+                                 <Link
+                                   className="h2-result"
+                                   data-testid={ `link-to-album-${collectionId}` }
+                                   to={ `/album/${collectionId}` }
 
-                             >
-                               { collectionName }
-                             </Link>
-                           </li>
-                         ))
-                       }
-                     </ul>
-                   </>
-                 ) : (
-                   <span>Nenhum álbum foi encontrado</span>
+                                 >
+                                   { collectionName }
+                                 </Link>
+                               </li>
+                             ))
+                           }
+                         </ul>
+                       </>
+                     ) : (
+                       <span>Nenhum álbum foi encontrado</span>
+                     )
                  )
-             )
-           }
-
+               }
+             </div>
+           </div>
          </div>
 
        );

@@ -1,0 +1,188 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css') ;
+
+.test {
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: monospace, Courier;
+  margin: 0;
+  padding: 0;
+}
+
+.contener {
+  align-items: center;
+  background-color: #ececec;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.contener-input {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+  width: 300px;
+}
+
+.contener-flex-header {
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.contener-header {
+  align-items: center;
+  background-color: #ececec;
+  display: flex;
+  height: 100px;
+  justify-content: flex-end;
+  width: 100vw;
+}
+
+.contener-form {
+  align-items: center;
+  background-color: #181725;
+  color: white;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100vw;
+}
+
+.contener-labe {
+  border: solid 1px yellow;
+  height: 100%;
+  margin-left: 1px;
+  margin-right: 1px;
+  width: 100%;
+}
+
+p , i {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.contener-labeM {
+  height: 20px;
+  left: 7%;
+  margin-left: 4px;
+  margin-right: 4px;
+  position: relative;
+  width: 32.2%;
+}
+
+.contener-labeC {
+  left: 7%;
+  margin-left: 4px;
+  margin-right: 4px;
+  position: relative;
+}
+
+/* #input-value {
+  height: 25px;
+  width: 50%;
+} */
+
+.contener-labeD {
+  font-size: 14px;
+  font-weight: 700;
+  height: 20px;
+  left: 7%;
+  margin-left: 4px;
+  margin-right: 4px;
+  position: relative;
+  width: 23.7%;
+}
+
+.contener-labeV {
+  margin-left: 4px;
+  position: absolute;
+  right: 82%;
+}
+
+.contener-labeT {
+  left: 7%;
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+.inputEmail , .inputSenha , input:-webkit-autofill , input:-webkit-autofill:hover {
+  background-color: #181725;
+  border: solid 1px #181725;
+  border-radius: 10px;
+  box-shadow: 1000px #181725 inset;
+  color: #ececec;
+  font-size: 18px;
+  outline: none;
+  padding: 12px 16px;
+  -webkit-text-fill-color: white;
+}
+
+.inputButtonDesp {
+  border-radius: 10px;
+  bottom: 63%;
+  height: 30px;
+  left: 86%;
+  position: absolute;
+  width: 145px;
+}
+
+.inputButton {
+  background-color: #12e497;
+  border: solid 1px #12e497;
+  border-radius: 10px;
+  color: #181725;
+  cursor: pointer;
+  padding: 12px 16px;
+  width: 88%;
+}
+
+.inputButton:disabled {
+  background: #ccc;
+}
+
+.label-email , .label-password {
+  color: #ececec;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.bi-eye-slash-fill {
+  color: #12e497;
+  font-size: 24px;
+  position: absolute;
+  right: 16px;
+  top: 12px;
+}
+
+label {
+  margin-bottom: 12px;
+}
+
+.thead {
+  background-color: #12e497;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+th {
+  font-size: 15px;
+  height: 10%;
+  margin-left: 8px;
+  margin-right: 5px;
+  width: 100%;
+}

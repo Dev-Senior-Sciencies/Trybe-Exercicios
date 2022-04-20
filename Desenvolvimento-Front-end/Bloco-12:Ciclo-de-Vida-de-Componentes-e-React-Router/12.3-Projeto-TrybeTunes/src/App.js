@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import Favorites from './pages/Favorites';
 import Album from './pages/Album';
 import ProfileEdit from './pages/ ProfileEdit';
+import Loading from './componets/Loading';
 
 class App extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class App extends React.Component {
           <Route exact path="/favorites" component={ Favorites } />
           <Route exact path="/profile" component={ Profile } />
           <Route exact path="/profile/edit" component={ ProfileEdit } />
+          <Route exact path="/loading" component={ Loading } />
           <Route exact path="*" component={ NotFound } />
         </Switch>
       </BrowserRouter>

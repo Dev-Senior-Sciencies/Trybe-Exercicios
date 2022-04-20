@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+  margin-top: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/ackgrounds.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(248, 247, 247);
+  padding: 80px;
+}
+
+.cardDell {
+  font-size: 40px;
+  height: 50px;
+  width: 150px;
+  margin-top: 20px;
+  background-color: rgb(145, 141, 158);
+  color: white;
+  border-radius: 15px;
+  position: relative;
+  left: 44%;
+  outline: none;
+  border: solid 1px rgb(145, 141, 158);
+}
+
+.container-div-form {
+  display: flex;
+  height: 65vh;
+  justify-content: center;
+  background-color: #2F3061;
+  border-radius: 15px;
+}
+
+.container-form {
+  display: flex;
+  height: 62vh;
+  width: 50vw;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-self: center;
+  background-color: #5C7AFF;
+  border-radius: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+  margin-top: -20px;
+}
+
+.card-prev {
+  zoom: 76%;
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 5px rgb(22, 22, 22);
+  width: 730px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.image-card {
+  display: flex;
+  align-self: center;
+}
+
+.descricao {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: 100px;
+  color: black;
+  width: 300px;
+  background: linear-gradient(to bottom, #0b89af 0%, #07030f 100%);
+}
+.poder {
+  height: 90px;
+  width: 300px;
+  background: linear-gradient(to bottom, #0b89af 0%, #4117a3 100%);
+}
+.dano {
+  height: 90px;
+  width: 300px;
+  background: linear-gradient(to bottom, #021224 0%, #0e6ad3 100%);
+}
+
+.habilidade {
+  height: 90px;
+  width: 300px;
+  background: linear-gradient(to bottom, #0b89af 0%, #4117a3 100%);
+}
+.raridade {
+  color: #fafaf6;
+}
+
+.label {
+  margin-left: 10px;
+  color: #343434;
+}
+
+input {
+  margin-left: 80px;
+  width: 15%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+textarea {
+  margin-top: 20px;
+  margin-left: 29px;
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+select {
+  margin-top: 20px;
+  margin-left: 37px;
+  width: 107px;
+  border-radius: 10px;
+}
+
+.save-button {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 250px;
+  border-radius: 10px;
+}
+
+#cardName {
+  margin-top: 20px;
+  margin-left: 53px;
+  border-radius: 10px;
+}
+
+#cardImage {
+  margin-top: 20px;
+  margin-left: 42px;
+  border-radius: 10px;
+}
+
+#cardAttr1 {
+  margin-top: 20px;
+  margin-left: 56px;
+  border-radius: 10px;
+}
+#cardAttr2 {
+  margin-top: 20px;
+  margin-left: 59px;
+  border-radius: 10px;
+}
+#cardAttr3 {
+  margin-top: 20px;
+  margin-left: 24px;
+  border-radius: 10px;
+}
+#cardTrunfo {
+  margin-top: 20px;
+  margin-left: 18px;
+  border-radius: 10px;
+}

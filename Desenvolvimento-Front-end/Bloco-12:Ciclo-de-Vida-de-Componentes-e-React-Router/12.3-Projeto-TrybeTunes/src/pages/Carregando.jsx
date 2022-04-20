@@ -7,8 +7,11 @@ class Carregando extends Component {
       loading,
     } = this.props;
     return (
-      <div>
-        {loading && <p>Carregando...</p>}
+      <div className="container-carregando">
+        <div className="carregando">
+          <i className="gg-search-loading" />
+          {loading && <p>Carregando...</p>}
+        </div>
       </div>
     );
   }

@@ -42,17 +42,20 @@ class Favorites extends React.Component {
         <div>
           {isLoading && <Carregando loading={ isLoading } />}
         </div>
-        <div>
-          {favorites.map((f) => (
-            <MusicCard
-              key={ f.trackId }
-              trackId={ f.trackId }
-              previewUrl={ f.previewUrl }
-              trackName={ f.trackName }
-              favorites={ favorites }
-              removeFavorite={ removeFavorite }
-            />
-          ))}
+        <div className="container-favorites-div">
+          <div className="container-favorites">
+
+            {favorites.map((f) => (
+              <MusicCard
+                key={ f.trackId }
+                trackId={ f.trackId }
+                previewUrl={ f.previewUrl }
+                trackName={ f.trackName }
+                favorites={ favorites }
+                removeFavorite={ removeFavorite }
+              />
+            ))}
+          </div>
 
         </div>
       </div>

@@ -72,7 +72,7 @@ class Album extends React.Component {
           {
             music.length > 0
                   && (
-                    <div>
+                    <div className="album-name">
                       <h2 data-testid="album-name">{ music[0].collectionName }</h2>
 
                       <h3 data-testid="artist-name">{ music[0].artistName }</h3>

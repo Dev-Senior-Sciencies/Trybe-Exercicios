@@ -30,24 +30,64 @@ class Header extends React.Component {
       const { userName, isLoading } = this.state;
 
       return (
-        <header data-testid="header-component">
-          <h1>TrybeTunes</h1>
-          {
-            isLoading
-              ? <Carregando loading={ isLoading } />
-              : <h2 data-testid="header-user-name">{userName}</h2>
-          }
-          <nav>
-            <li>
-              <Link to="/search" data-testid="link-to-search">Pesquisar</Link>
-            </li>
-            <li>
-              <Link to="/favorites" data-testid="link-to-favorites">Favorites</Link>
-            </li>
-            <li>
-              <Link to="/profile" data-testid="link-to-profile">Profile</Link>
-            </li>
-          </nav>
+        <header
+          className="contener-header"
+          data-testid="header-component"
+        >
+          <div className="contener-header-div">
+
+            <h1
+              className="trybe-h1"
+            >
+              TrybeTunes
+
+            </h1>
+            {
+              isLoading
+                ? (<Carregando loading={ isLoading } />)
+
+                : (
+                  <h2 className="user-h2" data-testid="header-user-name">
+                    {`Be Very Welcome
+                    ${userName}`}
+                  </h2>
+                )
+            }
+            <nav
+              className="trybe-nav"
+            >
+              <li className="link-li">
+                <Link
+                  className="link-search"
+                  to="/search"
+                  data-testid="link-to-search"
+                >
+                  Pesquisar
+
+                </Link>
+              </li>
+              <li className="link-li">
+                <Link
+                  className="link-favorites"
+                  to="/favorites"
+                  data-testid="link-to-favorites"
+                >
+                  Favorites
+
+                </Link>
+              </li>
+              <li className="link-li">
+                <Link
+                  className="link-profile"
+                  to="/profile"
+                  data-testid="link-to-profile"
+                >
+                  Profile
+
+                </Link>
+              </li>
+            </nav>
+          </div>
         </header>
       );
     }

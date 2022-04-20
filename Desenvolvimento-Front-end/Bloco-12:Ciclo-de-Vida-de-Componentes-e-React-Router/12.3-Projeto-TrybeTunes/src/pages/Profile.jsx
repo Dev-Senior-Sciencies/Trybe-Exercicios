@@ -44,18 +44,27 @@ class Profile extends React.Component {
        <div data-testid="page-profile">
          <Header />
          {isLoading && <Carregando loading={ isLoading } /> }
-         <div>
-           <nav>
-             <Link to="/profile/edit">Editar perfil</Link>
-           </nav>
-           <img
-             data-testid="profile-image"
-             src={ userImage }
-             alt={ `Imagem de ${userName}` }
-           />
-           <p>{userName}</p>
-           <p>{userEmail}</p>
-           <p>{userDescription}</p>
+         <div className="nav-containe">
+           <div className="nav-containe-link">
+
+             <nav>
+               <Link
+                 className="nav-link"
+                 to="/profile/edit"
+               >
+                 Editar perfil
+
+               </Link>
+             </nav>
+             <img
+               data-testid="profile-image"
+               src={ userImage }
+               alt={ `Imagem de ${userName}` }
+             />
+             <p>{userName}</p>
+             <p>{userEmail}</p>
+             <p>{userDescription}</p>
+           </div>
          </div>
        </div>
      );
